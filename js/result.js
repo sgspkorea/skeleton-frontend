@@ -5,14 +5,14 @@ const submitEmailBtn = document.getElementById('submitEmailBtn');
 
 // localStorage에서 userAnswers 가져오기
 let userAnswers = [];
-// try {
-//   const storedAnswers = localStorage.getItem('userAnswers');
-//   if (storedAnswers) {
-//     userAnswers = JSON.parse(storedAnswers);
-//   }
-// } catch (e) {
-//   console.error("Error parsing userAnswers", e);
-// }
+try {
+  const storedAnswers = localStorage.getItem('userAnswers');
+  if (storedAnswers) {
+    userAnswers = JSON.parse(storedAnswers);
+  }
+} catch (e) {
+  console.error("Error parsing userAnswers", e);
+}
 
 submitEmailBtn.addEventListener('click', () => {
   const email = emailInput.value.trim();

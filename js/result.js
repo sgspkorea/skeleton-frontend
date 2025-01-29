@@ -4,7 +4,7 @@ const emailInput = document.getElementById('emailInput');
 const submitEmailBtn = document.getElementById('submitEmailBtn');
 
 // localStorage에서 userAnswers 가져오기
-// let userAnswers = [];
+let userAnswers = [];
 // try {
 //   const storedAnswers = localStorage.getItem('userAnswers');
 //   if (storedAnswers) {

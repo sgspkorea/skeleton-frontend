@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>메인 페이지</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Simple Test</h1>
+  <p>간단한 테스트 페이지입니다. 아래 버튼을 눌러 시작하세요.</p>
+  <button id="startButton">Go Take a Test</button>
+
+  <script>
+    document.getElementById('startButton').addEventListener('click', () => {
+      // 두 번째 페이지인 test.html로 이동
+      window.location.href = 'test.html';
+    });
+  </script>
+</body>
+</html>

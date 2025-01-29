@@ -1,0 +1,35 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  h1, h2 {
+    margin-bottom: 10px;
+  }
+  button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  #test-container,
+  #result-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    margin: 5px 0;
+  }
+  input[type="email"] {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  

@@ -86,7 +86,12 @@ const questions = [
       radio.addEventListener('change', () => {
         // 사용자가 이 문제에서 고른 답안 저장
         userAnswers[currentQuestionIndex] = parseInt(radio.value, 10);
-        goNextOrResult();
+
+          // 마지막 문제가 아니라면 goNextOrResult() 실행
+          if (currentQuestionIndex < questions.length - 1) {
+            goNextOrResult();
+          }
+
       });
   
       choicesContainer.appendChild(li);
@@ -111,7 +116,7 @@ const questions = [
   
     // "다음" 버튼 텍스트 변경(마지막 문제일 경우 'Finish' 등)
     if (index === questions.length - 1) {
-      nextQuestionBtn.textContent = 'Finish';
+      nextQuestionBtn.textContent = 'Submit';
     } else {
       nextQuestionBtn.textContent = 'Next';
     }

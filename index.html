@@ -3,18 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <title>메인 페이지</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Simple Test</h1>
-  <p>간단한 테스트 페이지입니다. 아래 버튼을 눌러 시작하세요.</p>
-  <button id="startButton">Go Take a Test</button>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
 
-  <script>
-    document.getElementById('startButton').addEventListener('click', () => {
-      // 두 번째 페이지인 test.html로 이동
-      window.location.href = 'test.html';
-    });
-  </script>
+  <!-- Add viewport meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+<header>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#">
+          <img src="images/logo.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <!-- Image on the left for desktop, on top for mobile -->
+      <img src="images/your-image.png" alt="Hero Image" class="hero-image">
+      <div class="hero-text">
+        <h1>나의 IQ는 <br> 대한민국 몇등일까요?</h1>
+        <p>지금 바로 알아보세요!</p>
+        <button class="cta-button" >IQ 테스트 시작</button>
+        <div id="sticky-container">
+          <button class="cta-button" id="cta-button" >IQ 테스트 시작</button>
+        </div>
+        <script>
+          document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+              window.location.href = 'test.html';
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Features Section -->
+<section class="features">
+  <div class="features-container">
+    <!-- Top Part: Heading and Body -->
+    <div class="features-top animate">
+      <h2>Our Features</h2>
+      <p>Return on investment success traction burn rate client social proof bandwidth angel investor interaction design equity MVP marketing. Partnership pitch leverage ramen.</p>
+    </div>
+    <!-- Bottom Part: 3 Boxes -->
+    <div class="features-bottom animate">
+      <!-- Feature Box 1 -->
+      <div class="feature-box">
+        <div class="feature-icon">
+          <img src="images/feature1.png" alt="Feature One Icon">
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Android startup success launch party business plan validation scrum project gen-z monetization churn rate facebook</p>
+      </div>
+      <!-- Feature Box 2 -->
+      <div class="feature-box">
+        <div class="feature-icon">
+          <img src="images/feature2.png" alt="Feature Two Icon">
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Android startup success launch party business plan validation scrum project gen-z monetization churn rate facebook</p>
+      </div>
+      <!-- Feature Box 3 -->
+      <div class="feature-box">
+        <div class="feature-icon">
+          <img src="images/feature3.png" alt="Feature Three Icon">
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Android startup success launch party business plan validation scrum project gen-z monetization churn rate facebook</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- First Feature Section -->
+<section class="feature-section animate">
+  <div class="feature-section-container">
+    <div class="feature-content">
+      <!-- Text on Left -->
+      <div class="feature-text">
+        <h2>Feature One Heading</h2>
+        <p>Brief description of feature one. Explain the benefits and key points.</p>
+      </div>
+      <!-- Image on Right -->
+      <div class="feature-image">
+        <img src="images/hero1.png" alt="Feature One Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Second Feature Section -->
+<section class="feature-section reverse animate">
+  <div class="feature-section-container">
+    <div class="feature-content">
+      <!-- Text on Right -->
+      <div class="feature-text">
+        <h2>Feature Two Heading</h2>
+        <p>Brief description of feature two. Highlight its advantages and features.</p>
+      </div>
+      <!-- Image on Left -->
+      <div class="feature-image">
+        <img src="images/hero2.png" alt="Feature Two Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Third Feature Section -->
+<section class="feature-section animate">
+  <div class="feature-section-container">
+    <div class="feature-content">
+      <!-- Text on Left -->
+      <div class="feature-text">
+        <h2>Feature Three Heading</h2>
+        <p>Brief description of feature three. Emphasize its importance and usability.</p>
+      </div>
+      <!-- Image on Right -->
+      <div class="feature-image">
+        <img src="images/hero3.png" alt="Feature Three Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <!-- Footer Bottom Text -->
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript File -->
+  <script src="js/sticky.js"></script>
+  <script src="js/animate.js"></script>
+
 </body>
 </html>
+

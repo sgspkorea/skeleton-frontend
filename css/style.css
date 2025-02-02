@@ -6,11 +6,12 @@ body {
   h1, h2 {
     margin-bottom: 10px;
   }
-  button {
+  /* button {
     margin-top: 10px;
     padding: 8px 16px;
     cursor: pointer;
-  }
+  } */
+   
   #test-container,
   #result-container {
     border: 1px solid #ccc;

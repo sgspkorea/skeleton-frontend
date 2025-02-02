@@ -1,0 +1,139 @@
+/* Reset default browser margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: #646183;
+  }
+  
+  /* Container */
+  header .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: space-between;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #fff;
+    /* border-bottom: 1px solid #eaeaea;  */ 
+    padding: 20px 0;
+    position: relative; /* To position the nav when active */
+  }
+  
+  /* Logo */
+  .logo a img {
+    width: 150px; /* Adjust to your logo's desired size */
+    height: 90%;
+  }
+
+    /* Spacing Adjustments */
+    .logo {
+        margin-right: 20px;
+    }
+
+    /* Initial state: elements are hidden, translated down, and slightly scaled down */
+.animate {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+    transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  
+  /* When the element is visible in the viewport */
+  .animate.in-view {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  /* When the element is out of view upwards */
+  .animate.out-of-view-up {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #ffffff;
+    padding: 40px 0 120px 0 ;
+    font-size: 16px;
+  }
+  
+  .footer-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-social {
+    margin-bottom: 20px;
+  }
+  
+  .footer-social a {
+    color: #646183;
+    margin: 0 10px;
+    font-size: 18px;
+    display: inline-block;
+  }
+  
+  .footer-social a:hover {
+    color: #007BFF;
+  }
+  
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    color: #646183;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-social a {
+      margin: 0 8px;
+      font-size: 16px;
+    }
+    
+    .footer-links a {
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    /* Adjust logo size for smaller screens  */
+    .logo a img {
+        width: 120px; /* Adjust as needed */
+        
+    } 
+        
+  }
+
+    /* button style ignore */
+
+  button {
+    all: unset;
+  }

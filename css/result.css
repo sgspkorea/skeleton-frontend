@@ -1,0 +1,55 @@
+/* 결과 페이지 메인 스타일 */
+#result-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+  
+  #result-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #result-container input[type="email"] {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+    transition: border 0.2s;
+  }
+  
+  #result-container input[type="email"]:focus {
+    border-color: #372da0;
+  }
+  
+  #submitEmailBtn {
+    background-color: #372da0;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #submitEmailBtn:hover {
+    background-color: #2e2489;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #372da0;
+    margin-top: 40px;
+  }
+  

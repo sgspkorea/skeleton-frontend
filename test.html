@@ -3,18 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <title>테스트 페이지</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Add viewport meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <h2>문제 풀기</h2>
-  <div id="test-container">
-    <h3 id="question-title"></h3>
-    <ul id="choices-container"></ul>
-    <button id="prevQuestionBtn">Previous</button>
-    <button id="nextQuestionBtn">Next</button>
+  
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="Logo">
+          </a>
+        </div>
+      </div>
+    </header>
+
+  <!-- Progress Section -->
+<section class="progress-section">
+  <div class="progress-container">
+    <div class="progress-header">
+      <!-- Current Problem Number -->
+      <div class="problem-number">
+        Problem <span id="current-problem">1</span> / <span id="totalProblems">3</span>
+      </div>
+      <!-- Remaining Time -->
+      <div class="remaining-time">
+        Time Left: <span id="timer">40:00</span>
+      </div>
+    </div>
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 0%;" id="progress-fill"></div>
+      </div>
+      <div id="nav-buttons">
+        <button id="prevQuestionBtn">Previous</button>
+        <button id="nextQuestionBtn">Next</button>
+      </div>  
+    </div>
   </div>
+</section>
+  
+  
+  <div id="test-container-main">
+    <div id="test-container">
+      <!-- 문제 (왼쪽) -->
+      <div id="question-container">
+        <img id="question-image" src="" alt="문제 이미지">
+      </div>
+    
+      <!-- 답지 (오른쪽) -->
+      <div id="choices-container">
+        <!-- 답지는 `test.js`에서 동적으로 추가됨 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <!-- Footer Bottom Text -->
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 
   <!-- test.js에서 전체 로직 처리 -->
   <script src="js/test.js"></script>
+  <script src="js/timer.js"></script>
 </body>
 </html>

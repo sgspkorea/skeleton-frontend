@@ -1,0 +1,164 @@
+/* Progress Section Styles */
+.progress-section {
+  background-color: #fff; /* Light background color */
+  padding: 20px 0;
+}
+
+.progress-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* ... rest of your existing CSS ... */
+
+.problem-number,
+.remaining-time {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.progress-bar-container {
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 10px;
+  background-color: #372da0;
+  width: 0%; /* Initial width */
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+
+/* 전체 영역 가운데 정렬 */
+#test-container-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 문제 + 선택지 flex 정렬 */
+#test-container {
+  display: flex;
+  gap: 40px;
+}
+
+/* 문제 영역 */
+#question-container {
+  flex: 1.2;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+#question-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 선택지 영역 */
+#choices-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 데스크탑: 위 3 + 아래 2 */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* 선택지 스타일 */
+.choice-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice-number {
+  font-size: 16px;
+  font-weight: bold;
+  background: #007bff;
+  color: white;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.choice-img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.choice-img:hover {
+  transform: scale(1.1);
+}
+
+/* Progress 섹션 내부의 nav 버튼들 위치 조정 */
+#nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+
+#test-container,
+  #result-container {
+    /* border: 1px solid #000000; */
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+
+/* 반응형: 모바일 */
+@media (max-width: 600px) {
+  #test-container {
+    flex-direction: column;
+  }
+
+  #choices-container {
+    grid-template-columns: repeat(2, 1fr); /* 모바일: 2줄씩 */
+  }
+
+  .choice-img {
+    width: 100px;
+  }
+
+  #question-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #question-container {
+    width: 100%;
+  }
+
+}
+
+.choice-img.selected {
+  border: 4px solid #007bff;
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+

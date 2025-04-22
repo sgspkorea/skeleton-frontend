@@ -1,20 +1,6 @@
-/* style.css */
-body {
-    font-family: sans-serif;
-    margin: 20px;
-  }
-  h1, h2 {
-    margin-bottom: 10px;
-  }
-  /* button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    cursor: pointer;
-  } */
-   
-  #test-container,
+#test-container,
   #result-container {
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;

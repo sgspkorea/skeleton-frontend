@@ -23,7 +23,8 @@ submitEmailBtn.addEventListener('click', () => {
 
 
     // "userAnswers" 변수에 사용자가 풀었던 객관식 인덱스들을 담아둔다고 가정
-    fetch('https://wiz-5w0i.onrender.com/submit', {
+    fetch('http://localhost:3000/submit', {
+    // fetch('https://wiz-5w0i.onrender.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

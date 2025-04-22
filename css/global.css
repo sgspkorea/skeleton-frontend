@@ -23,8 +23,7 @@
   
   /* Header Styles */
   header {
-    background-color: #fff;
-    /* border-bottom: 1px solid #eaeaea;  */ 
+    background-color: #fff; /* border-bottom: 1px solid #eaeaea;  */ 
     padding: 20px 0;
     position: relative; /* To position the nav when active */
   }
@@ -40,8 +39,9 @@
         margin-right: 20px;
     }
 
+
     /* Initial state: elements are hidden, translated down, and slightly scaled down */
-.animate {
+  .animate {
     opacity: 0;
     transform: translateY(50px) scale(0.95);
     transition: opacity 0.8s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -127,9 +127,7 @@
     /* Adjust logo size for smaller screens  */
     .logo a img {
         width: 120px; /* Adjust as needed */
-        
     } 
-        
   }
 
     /* button style ignore */

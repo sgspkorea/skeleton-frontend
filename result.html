@@ -1,11 +1,37 @@
+
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
   <title>결과 & 이메일 입력</title>
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/result.css">
+
+
+  <!-- Add viewport meta tag for responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
+
+   <!-- Header Section -->
+<header>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+    </div>
+  </div>
+</header>
+
   <h2>결과 확인</h2>
   <div id="result-container">
     <p>문제를 모두 풀었습니다. 이메일을 입력하고 결과를 받아보세요!</p>
@@ -13,7 +39,33 @@
     <button id="submitEmailBtn">Submit</button>
   </div>
 
-  <!-- result.js에서 로직 처리 -->
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-container">
+    <!-- Social Media Links -->
+    <div class="footer-social">
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms and Conditions</a>
+    </div>
+    <!-- Footer Bottom Text -->
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript File -->
+  <script src="js/sticky.js"></script>
+  <script src="js/animate.js"></script>
   <script src="js/result.js"></script>
+
 </body>
 </html>
+
